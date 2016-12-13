@@ -7,3 +7,11 @@
 # ignore all files in the build/ directory
 build/
 
+# ignore all files in the .idea/ directory
+.idea/
+
+# ignore all files in the out/ directory
+out/
+
+# no .iml files
+*.iml
