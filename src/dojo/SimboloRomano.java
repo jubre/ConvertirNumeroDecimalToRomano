@@ -5,6 +5,7 @@ import java.util.Map;
 
 public enum SimboloRomano {
 
+// Enumerados
 	UNO("I"), CINCO("V"), DIEZ("X"), CINCUENTA("L"), CIEN("C"), QUINIENTOS("D"), MIL(
 			"M");
 
