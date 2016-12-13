@@ -12,7 +12,7 @@ Compile the program
 
 Execute Test
 
-- java org.junit.runner.JUnitCore dojo.ConversorNumeroTest
+- java org.junit.runner.JUnitCore dojo.ConverterNumeroTest
 
 Alternativa de solucion al Coding Dojo de Conversion de Numeros Decimales a Romanos.
 
