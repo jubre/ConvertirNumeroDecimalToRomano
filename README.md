@@ -1,6 +1,6 @@
 # Instructions
 
-## Linux
+## Linux or MacOX
 
 Add libs for Junit and Program - only once
 
@@ -17,4 +17,4 @@ Execute Test
 Alternativa de solucion al Coding Dojo de Conversion de Numeros Decimales a Romanos.
 
 Saludos,
-Junior B.
+Junior Corman
