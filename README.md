@@ -8,7 +8,7 @@ Add libs for Junit and Program - only once
 
 Compile the program
 
-- javac -d build/classes/ -sourcepath src/ src/dojo/Conversor.java
+- javac -d build/classes/ -sourcepath src/ src/dojo/Converter.java
 
 Execute Test
 
