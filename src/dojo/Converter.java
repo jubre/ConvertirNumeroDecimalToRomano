@@ -49,26 +49,25 @@ public class Converter {
 		return romanoValue;
 	}
 
-	private String getPatterRepeatEveryFive(int valor, int valorBase, String simboloRomanoBase, String simboloRomanoLateral) {
-		String resultado = "";
-		int diferenciaLateral = valor - valorBase;
+	private String getPatterRepeatEveryFive(int valor, int valorBase, String romanoBaseCharacter, String romanoLateralCharacter) {
+		int lateralDifference = valor - valorBase;
 
-		resultado = cuerpoRepetido(diferenciaLateral, simboloRomanoBase, simboloRomanoLateral);
+		String romanoValue = recursiveBody(lateralDifference, romanoBaseCharacter, romanoLateralCharacter);
 
-		return resultado;
+		return romanoValue;
 	}
 
-	private String cuerpoRepetido(int diferenciaLateral, String simboloRomanoBase, String simboloRomanoLateral) {
-		String resultado = "";
+	private String recursiveBody(int lateralDifference, String romanoBaseCharacter, String romanoLateralCharacter) {
+		String romanoValue;
 
-		if (diferenciaLateral < 0) {
-			resultado = getPatterRepeatEveryThree(Math.abs(diferenciaLateral), simboloRomanoLateral) + simboloRomanoBase;
-		} else if (diferenciaLateral == 0) {
-			resultado = simboloRomanoBase;
+		if (lateralDifference < 0) {
+			romanoValue = getPatterRepeatEveryThree(Math.abs(lateralDifference), romanoLateralCharacter) + romanoBaseCharacter;
+		} else if (lateralDifference == 0) {
+			romanoValue = romanoBaseCharacter;
 		} else {
-			resultado = simboloRomanoBase + getPatterRepeatEveryThree(Math.abs(diferenciaLateral), simboloRomanoLateral);
+			romanoValue = romanoBaseCharacter + getPatterRepeatEveryThree(Math.abs(lateralDifference), romanoLateralCharacter);
 		}
-		return resultado;
+		return romanoValue;
 	}
 
 }
