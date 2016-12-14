@@ -5,7 +5,7 @@ import java.util.Stack;
 
 public class Converter {
 
-	Map<Integer, String[]> romanosCharacter = SimboloRomano.obtenerCaracteresRomanos();
+	Map<Integer, String[]> romanosCharacter = RomanoCharacter.getRomanoCharacterMap();
 
 	public String parseDecimalToRomano(int decimalValue) {
 		String romanoValue = "";
